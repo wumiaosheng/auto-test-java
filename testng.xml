@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="测试套件" >
+    <test name="测试">
+        <classes>
+            <class name="com.lrc.testcases.Test02"/>
+        </classes>
+    </test>
+</suite>
