@@ -23,7 +23,7 @@ public class Test01 {
 
     @DataProvider
     public Object[] readCases(){
-        List<CaseInfo> listDatas = EasyPoiExcelUtil.readExcel(0);
+        List<CaseInfo> listDatas = EasyPoiExcelUtil.readExcel("E:\\api_testcases.xls",0);
         return listDatas.toArray();
     }
 }

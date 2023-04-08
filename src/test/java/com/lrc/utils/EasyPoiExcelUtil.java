@@ -2,7 +2,6 @@ package com.lrc.utils;
 
 import cn.afterturn.easypoi.excel.ExcelImportUtil;
 import cn.afterturn.easypoi.excel.entity.ImportParams;
-import com.lrc.config.Contants;
 import com.lrc.entries.CaseInfo;
 
 import java.io.File;
@@ -21,9 +20,9 @@ public class EasyPoiExcelUtil {
      * @return 用例list集合
      * 获取Excel里的所有行
      */
-    public static List<CaseInfo> readExcel(int num){
+    public static List<CaseInfo> readExcel(String path,int num){
         //读取测试用例
-        File file=new File(Contants.EXCEL_PATH);
+        File file=new File(path);
         //读取和导入Excel的参数配置
         ImportParams params=new ImportParams();
         params.setStartSheetIndex(num);
@@ -38,9 +37,9 @@ public class EasyPoiExcelUtil {
      * @return 用例list集合
      * 获取Excel里的指定行
      */
-    public static List<CaseInfo> readExcelPart(int num,int startNum,int readRows){
+    public static List<CaseInfo> readExcelPart(String path,int num,int startNum,int readRows){
         //读取测试用例
-        File file=new File(Contants.EXCEL_PATH);
+        File file=new File(path);
         //读取和导入Excel的参数配置
         ImportParams params=new ImportParams();
         //读取指定页的Sheet
@@ -59,9 +58,9 @@ public class EasyPoiExcelUtil {
      * @return 用例list集合
      * 从指定行开始读取下面全部用例
      */
-    public static List<CaseInfo> readExcelPart(int num,int startNum){
+    public static List<CaseInfo> readExcelPart(String path,int num,int startNum){
         //读取测试用例
-        File file=new File(Contants.EXCEL_PATH);
+        File file=new File(path);
         //读取和导入Excel的参数配置
         ImportParams params=new ImportParams();
         //读取指定页的Sheet

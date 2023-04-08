@@ -1,7 +1,7 @@
 package com.lrc.testcases;
 
 import com.lrc.common.BaseTest;
-import com.lrc.config.Contants;
+import com.lrc.common.constants.Contants;
 import com.lrc.config.Environment;
 import com.lrc.entries.CaseInfo;
 import com.lrc.utils.EasyPoiExcelUtil;
@@ -44,7 +44,7 @@ public class Test02 extends BaseTest {
     @DataProvider
     //向测试用例提供Excel数据
     public Object[] readCases(){
-        List<CaseInfo> listDatas = EasyPoiExcelUtil.readExcel(0);
+        List<CaseInfo> listDatas = EasyPoiExcelUtil.readExcel("E:\\api_testcases.xls",0);
         return listDatas.toArray();
     }
 

@@ -1,8 +1,8 @@
-package com.lrc.config;
+package com.lrc.common.constants;
 
 /**
  * @param
- * @author lrc
+ * @author wums
  * @create 2022/1/9
  * @return
  * @description 项目常规信息配置类
@@ -12,8 +12,6 @@ public class Contants {
     public static final String PROJECT_URL="";
     //项目BASEURI地址
     public static final String BASE_URL="http://127.0.0.1:8081";
-    //测试用例路径
-    public static final String EXCEL_PATH="src\\test\\resources\\api_testcases.xls";
     //账号数据的Key，此处的key是自己申请聚合数据账号后得到的key
     public static final String KEY="XXXXX";
     //控制台日志输出开关（true->输出到控制台，false->不输出到控制台）

@@ -1,7 +1,7 @@
 package com.lrc.common;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lrc.config.Contants;
+import com.lrc.common.constants.Contants;
 import com.lrc.config.Environment;
 import com.lrc.entries.CaseInfo;
 import com.lrc.utils.JDBCUtils;

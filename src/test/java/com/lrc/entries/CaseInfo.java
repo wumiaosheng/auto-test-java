@@ -1,6 +1,8 @@
 package com.lrc.entries;
 
+
 import cn.afterturn.easypoi.excel.annotation.Excel;
+import lombok.Data;
 
 /**
  * @param
@@ -9,6 +11,7 @@ import cn.afterturn.easypoi.excel.annotation.Excel;
  * @return
  * @description
  **/
+@Data
 public class CaseInfo {
     @Excel(name = "序号(caseId)")
     private int caseId;
@@ -40,99 +43,7 @@ public class CaseInfo {
     @Excel(name="提取表达式(extractExper)")
     private String extractExper;
 
-    public int getCaseId() {
-        return caseId;
-    }
 
-    public void setCaseId(int caseId) {
-        this.caseId = caseId;
-    }
 
-    public String getInterfaceName() {
-        return interfaceName;
-    }
 
-    public void setInterfaceName(String interfaceName) {
-        this.interfaceName = interfaceName;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getRequestHeader() {
-        return requestHeader;
-    }
-
-    public void setRequestHeader(String requestHeader) {
-        this.requestHeader = requestHeader;
-    }
-
-    public String getMethod() {
-        return method;
-    }
-
-    public void setMethod(String method) {
-        this.method = method;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public String getInputParams() {
-        return inputParams;
-    }
-
-    public void setInputParams(String inputParams) {
-        this.inputParams = inputParams;
-    }
-
-    public String getExpected() {
-        return expected;
-    }
-
-    public void setExpected(String expected) {
-        this.expected = expected;
-    }
-
-    public String getDbAssert() {
-        return dbAssert;
-    }
-
-    public void setDbAssert(String dbAssert) {
-        this.dbAssert = dbAssert;
-    }
-
-    public String getExtractExper() {
-        return extractExper;
-    }
-
-    public void setExtractExper(String extractExper) {
-        this.extractExper = extractExper;
-    }
-
-    @Override
-    public String toString() {
-        return "CaseInfo{" +
-                "caseId=" + caseId +
-                ", interfaceName='" + interfaceName + '\'' +
-                ", title='" + title + '\'' +
-                ", requestHeader='" + requestHeader + '\'' +
-                ", method='" + method + '\'' +
-                ", url='" + url + '\'' +
-                ", inputParams='" + inputParams + '\'' +
-                ", expected='" + expected + '\'' +
-                ", dbAssert='" + dbAssert + '\'' +
-                ", extractExper='" + extractExper + '\'' +
-                '}';
-    }
 }
